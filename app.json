@@ -27,7 +27,7 @@
       },
       {
         "pagePath": "pages/advertising/advertising",
-        "text": "优惠套餐",
+        "text": "优惠套餐1",
         "iconPath": "./images/tab02.png",
         "selectedIconPath": "./images/tab2.png"
       },
