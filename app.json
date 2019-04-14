@@ -21,7 +21,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "服务预约",
+        "text": "服务预约222",
         "iconPath": "./images/tab03.png",
         "selectedIconPath": "./images/tab3.png"
       },
