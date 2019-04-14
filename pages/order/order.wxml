@@ -1,0 +1,19 @@
+<!--pages/order/order.wxml-->
+<view wx:if="{{isnull}}" class="null">您目前还没有订单</view>
+<view class="order" wx:if="{{!isnull}}">
+
+    <view class="order-item" wx:for="{{listdata}}" wx:key="index">
+      <navigator
+      url="/pages/detalis/detalis?created_at={{item.created_at}}&address={{item.address}}&customer_name={{item.customer_name}}&doing_at={{item.doing_at}}&phone={{item.phone}}&price={{item.price}}&service_name={{item.service_name}}&status={{item.status}}"
+      open-type="navigate"
+      >
+      <view class="name">{{item.service_name}} 
+          <!-- <text wx:if="{{item.status==1}}">已派单</text> -->
+          <!-- <text wx:if="{{item.status==0}}">未派单</text> -->
+      </view>
+      <text>{{item.updated_at}}</text>
+      <text>{{item.price}}</text>
+      </navigator>
+    </view>
+</view>
+<view class="more" wx:if="{{ismore}}">已经到底了</view>

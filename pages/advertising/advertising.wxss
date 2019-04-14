@@ -1,0 +1,25 @@
+/* pages/advertising/advertising.wxss */
+page{
+  height: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+video{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+swiper{
+  width: 100%;
+  height: 600rpx;
+}
+swiper image{
+  height: 600rpx;
+}
+view{
+  text-align: center;
+  line-height: 80rpx;
+  color: #333;
+  font-size: 35rpx;
+}
+

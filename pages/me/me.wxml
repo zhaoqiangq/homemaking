@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="userinfo">
+    <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="../../images/head.png" mode="cover"></image> -->
+    <block wx:if="{{!hasUserInfo && canIUse}}">
+        <button  class="getInfo" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取信息</button>
+    </block>
+    
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="orderlist">
+    <navigator
+      url="/pages/order/order"
+      open-type="navigate"
+    >
+    <view class="order active">我的订单<image src='../../images/icon02.png' mode="widthFix"></image></view>
+    </navigator>
+    <view class="order" bindtap='callup'>客服电话: 0351 8300110<image src='../../images/icon02.png' mode="widthFix"></image></view>
+  </view>
+
+
+</view>

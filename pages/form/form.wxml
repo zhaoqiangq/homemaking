@@ -1,0 +1,21 @@
+<!--pages/form/form.wxml-->
+<view class="content">
+  <view class="name">{{name}} <text>{{price}}</text></view>
+  <form >
+    <view class="input">
+      <input placeholder="请输入姓名" bindinput="bindNameInput" />
+    </view>
+    <view class="input">
+      <input placeholder="请输入电话" bindinput="bindPhoneInput"  />
+    </view>
+    <view class="section">
+      <picker class='time-picker' mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap'  value="{{multiIndex}}" range="{{multiArray}}"><text>{{pickername}}</text> {{time}}</picker>
+    </view>
+    <view class="input">
+      <input placeholder="请输入地址" bindinput="bindSiteInput" />
+    </view>
+    <view>
+       <button bindtap='binSubmit' class="button">发布预约</button>
+    </view>
+  </form>
+</view>

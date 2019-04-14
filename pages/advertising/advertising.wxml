@@ -1,0 +1,24 @@
+<!-- pages/advertising/advertising.wxml -->
+<view>关于我们</view>
+ <video src="https://www.zhaoxiaoqiang.com/video/1.mp4" controls circular></video>
+ <!-- autoplay -->
+ <view>家装大课堂</view>
+ <video src="https://www.zhaoxiaoqiang.com/video/2.mp4" controls circular></video>
+
+ 
+<!-- <swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <navigator
+      url="/pages/form/form?name={{item.name}}&price={{item.price}}"
+      open-type="navigate"
+      >
+        <image src="{{item.imgsrc}}" class="slide-image" style='width:100%;'/>
+      </navigator>  
+    </swiper-item>
+  </block>
+</swiper> -->

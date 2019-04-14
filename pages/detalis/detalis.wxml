@@ -1,0 +1,9 @@
+<!--pages/detalis/detalis.wxml-->
+<view class="filter" wx:if="{{item.status==1}}"><text>状态：</text>  已派单</view>
+<view class="filter" wx:if="{{item.status==0}}"><text>状态：</text>  未派单</view> 
+<view><text>服务项目：</text>{{item.service_name}}</view>
+<view><text>价格：</text>{{item.price}}</view>
+<view><text>预约时间：</text>{{item.doing_at}}</view>
+<view><text>手机号：</text>{{item.phone}}</view>
+<view><text>地址：</text>{{item.address}}</view>
+<view><text>下单时间：</text>{{item.created_at}}</view>

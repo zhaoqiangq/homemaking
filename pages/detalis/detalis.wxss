@@ -1,0 +1,19 @@
+/* pages/detalis/detalis.wxss */
+view{
+  font-size: 28rpx;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  line-height: 80rpx;
+  height: 80rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+text{
+  width: 150rpx;
+  color: #333;
+  font-weight: 600rpx;
+  display: inline-block;
+}
+.filter{
+  color: #cd2e2e;
+}

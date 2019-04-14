@@ -1,0 +1,41 @@
+/* pages/order/order.wxss */
+page{
+  height: 100%;
+}
+scroll-view{
+  height: 100%;
+}
+.order-item{
+  line-height: 50rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 30rpx;
+  padding: 10rpx 20rpx;
+  color: #666;
+}
+.order-item:first-child{
+   border-top: 1px solid #eee;
+   margin-top: 50rpx;
+}
+.order-item text{
+  color: #FF0000;
+}
+.order-item text:nth-child(2){
+  float: right;
+  color: #979797;
+}
+.null{
+  text-align: center;
+  line-height: 200rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.more{
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 25rpx;
+  color: #666;
+}
+/* .name text{
+  float: right
+} */

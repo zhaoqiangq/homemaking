@@ -1,0 +1,35 @@
+<!--index.wxml-->
+
+<view class="seach">
+  <view class="seachInner">
+    <image src='../../images/icon01.png' mode="widthFix"></image>
+     <input placeholder="空调清洗" bindinput="bindKeyInput" confirm-type="search" bindconfirm="bindSearch"/>
+  </view>
+</view>
+
+<view class="nav"> 
+ <block wx:for="{{datalist}}" wx:key="index"> 
+  <view class="{{activeIndex==index?'active':''}}" bindtap="scrollToViewFn" data-id="{{index}}">{{item.texts}}</view> 
+ </block> 
+</view>  
+
+<scroll-view class="content" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true"> 
+ <image src='../../images/banner.jpg' mode="widthFix" class="images"></image>
+ <view class="inner" wx:for="{{datalist}}" wx:key="index"> 
+  <view class="h2" id="{{ 'inToView'+index}}">{{item.texts}}</view> 
+
+  <view wx:for="{{item.inner}}" wx:key="index" class="item"> 
+    <navigator
+      url="/pages/form/form?name={{item.name}}&price={{item.price}}"
+      open-type="navigate"
+    >
+      <image src='{{item.imgsrc}}' mode="widthFix"></image>
+      <view>{{item.name}}</view> 
+      <view class="price">{{item.price}}</view> 
+    </navigator>
+  </view> 
+ </view> 
+</scroll-view> 
+
+
+
